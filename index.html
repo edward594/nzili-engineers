@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nzili Solar | Premium Solar Panels & Batteries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            backgroud-color: brown;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .solar-panel-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508514177221-188e1eaf0883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .battery-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3DD3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .testimonial-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1508514177221-188e1eaf0883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .contact-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .team-img {
+            transition: transform 0.3s ease;
+        }
+        
+        .team-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        #chat-widget {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #chat-widget.opacity-100 {
+            opacity: 1;
+        }
+
+        #chat-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50" style="--primary-color: #f8f9fa;">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/4474/4474755.png" alt="Nzili Solar Logo">
+                        <span class="ml-2 text-xl font-bold gradient-text">NZILI SOLAR</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#products" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">Products</a>
+                    <a href="#team" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">Our Team</a>
+                    <a href="#testimonials" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-900 hover:text-yellow-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Get Quote</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#products" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Products</a>
+                <a href="#team" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Our Team</a>
+                <a href="#testimonials" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-900 hover:text-yellow-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Power Your Future With <span class="gradient-text">Solar Energy</span></h1>
+                    <p class="text-lg md:text-xl mb-8">Nzili Solar provides premium quality solar panels and batteries at competitive prices. Join the renewable energy revolution today!</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300 text-center">Our Products</a>
+                        <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300 text-center">Get Free Consultation</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Solar Panels" class="rounded-lg shadow-2xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2">10+</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2">1000+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-gray-600">Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Nzili Solar</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We are a leading provider of solar energy solutions, committed to delivering high-quality products and exceptional service to our customers.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188e1eaf0883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="About Nzili Solar" class="rounded-lg shadow-xl w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-yellow-500 p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="text-white text-2xl font-bold">10+ Years</div>
+                            <div class="text-white">In Business</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Why Choose Nzili Solar?</h3>
+                    <p class="text-gray-600 mb-6">Nzili Solar has been at the forefront of the renewable energy revolution, providing top-quality solar panels and battery storage solutions to residential and commercial customers across the region.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 p-2 rounded-full">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Premium Quality Products</p>
+                                <p class="text-gray-600">We source only the highest quality solar panels and batteries from trusted manufacturers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 p-2 rounded-full">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Expert Installation</p>
+                                <p class="text-gray-600">Our certified technicians ensure flawless installation for optimal performance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 p-2 rounded-full">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Competitive Pricing</p>
+                                <p class="text-gray-600">We offer the best value with competitive pricing and flexible payment options.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How Solar <span class="gradient-text">Works</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Watch our video to understand how solar energy can transform your home or business.</p>
+            </div>
+            
+            <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl">
+                <iframe class="w-full h-96 md:h-[500px]" src="https://www.youtube.com/embed/qKx-QXjnO8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Products</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We offer a wide range of solar panels and battery storage solutions to meet your energy needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="solar-panel-bg h-48 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Premium Solar Panel" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Premium Solar Panel 400W</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">4.8 (120 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-efficiency monocrystalline solar panel with 21.5% efficiency rating and 25-year performance warranty.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-900">$299.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="battery-bg h-48 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Solar Battery" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Solar Battery 5kWh</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">5.0 (85 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Lithium-ion solar battery with 10-year warranty, perfect for energy storage and backup power solutions.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-900">$1,999.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="solar-panel-bg h-48 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Solar Kit" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Complete Solar Kit 3kW</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">4.2 (64 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Everything you need for a complete solar installation including panels, inverter, mounting hardware and cables.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-900">$3,499.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#products" class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our <span class="gradient-text">Team</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our team of solar energy experts is dedicated to providing you with the best solutions and service.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center p-6">
+                    <div class="team-img mx-auto rounded-full overflow-hidden w-40 h-40 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Mwangi" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">John Mwangi</h3>
+                    <p class="text-yellow-500 font-medium mb-4">CEO & Founder</p>
+                    <p class="text-gray-600 mb-4">With over 15 years in renewable energy, John leads our vision for sustainable power solutions.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center p-6">
+                    <div class="team-img mx-auto rounded-full overflow-hidden w-40 h-40 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Kamau" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Sarah Kamau</h3>
+                    <p class="text-yellow-500 font-medium mb-4">Technical Director</p>
+                    <p class="text-gray-600 mb-4">Sarah oversees all technical aspects of our installations with her engineering expertise.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center p-6">
+                    <div class="team-img mx-auto rounded-full overflow-hidden w-40 h-40 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Ochieng" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">David Ochieng</h3>
+                    <p class="text-yellow-500 font-medium mb-4">Sales Manager</p>
+                    <p class="text-gray-600 mb-4">David helps customers find the perfect solar solution for their homes and businesses.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center p-6">
+                    <div class="team-img mx-auto rounded-full overflow-hidden w-40 h-40 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Grace Wanjiku" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Grace Wanjiku</h3>
+                    <p class="text-yellow-500 font-medium mb-4">Customer Support</p>
+                    <p class="text-gray-600 mb-4">Grace ensures our customers receive exceptional service before, during and after installation.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonial-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Customer <span class="gradient-text">Testimonials</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto">Hear what our satisfied customers have to say about our products and services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="James M." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Nzili Solar installed a 5kW system for my home and I couldn't be happier. My electricity bills have dropped by 80% and the installation was completed professionally and on time."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Mary W." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mary W.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"The team at Nzili Solar was incredibly knowledgeable and helped me choose the perfect battery storage solution for my needs. Their after-sales support has been excellent."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Robert K." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Robert K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"We installed Nzili Solar panels on our business premises and the results have been outstanding. The system paid for itself in just 3 years and we're now enjoying virtually free electricity."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto">Ready to switch to solar? Contact us today for a free consultation and quote.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-500 p-3 rounded-full">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Our Location</h4>
+                                <p>123 Solar Street, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-500 p-3 rounded-full">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Phone Number</h4>
+                                <p>+254 700 123 456</p>
+                                <p>+254 720 987 654</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-500 p-3 rounded-full">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Email Address</h4>
+                                <p>info@nzilisolar.com</p>
+                                <p>sales@nzilisolar.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-500 p-3 rounded-full">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">Working Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2">Your Email</label>
+                                <input type="email" id="email" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Solar Panel Inquiry">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-white bg-opacity-20 border border-white border-opacity-30 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" placeholder="Tell us about your solar needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808559489345!2d36.82154831475396!3d-1.2862358359793164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1623841234567!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <img class="h-8 w-auto mr-2" src="https://cdn-icons-png.flaticon.com/512/4474/4474755.png" alt="Nzili Solar Logo">
+                        <span class="gradient-text">NZILI SOLAR</span>
+                    </h3>
+                    <p class="text-gray-400">Leading provider of solar energy solutions in Kenya, helping homes and businesses transition to clean, renewable energy.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-yellow-500 transition duration-300">Products</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-yellow-500 transition duration-300">Our Team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Solar Panels</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Solar Batteries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Inverters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Charge Controllers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Solar Kits</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-yellow-500 w-full">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Nzili Solar. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-500 hover:bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/254791713624" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+        
+        <!-- Call Button -->
+        <a href="tel:+254791713624" class="bg-blue-500 hover:bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fas fa-phone-alt text-xl"></i>
+        </a>
+    </div>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-6 left-6 w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center shadow-xl cursor-pointer z-50 transition-all duration-300 hover:bg-yellow-600" onclick="toggleChat()">
+        <i class="fas fa-comment-dots text-white text-2xl"></i>
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chat-box" class="fixed bottom-24 left-6 w-80 bg-white rounded-lg shadow-xl z-50 hidden flex-col" style="height: 400px;">
+        <div class="bg-yellow-500 text-white p-3 rounded-t-lg flex justify-between items-center">
+            <h3 class="font-bold">Chat with Nzili Solar</h3>
+            <button onclick="toggleChat()" class="text-white hover:text-gray-200">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto bg-gray-50">
+            <div class="mb-4">
+                <div class="bg-gray-200 rounded-lg p-3 inline-block">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-3 border-t border-gray-200">
+            <div class="flex">
+                <input type="text" id="chat-input" placeholder="Type your message..." class="flex-1 border border-gray-300 rounded-l-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                <button onclick="sendMessage()" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-r-lg">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Chat Widget Functions
+        let chatVisible = false;
+        let chatTriggered = false;
+
+        function toggleChat() {
+            const chatWidget = document.getElementById('chat-widget');
+            const chatBox = document.getElementById('chat-box');
+            
+            chatVisible = !chatVisible;
+            
+            if (chatVisible) {
+                chatBox.classList.remove('hidden');
+                chatBox.classList.add('flex');
+                chatWidget.classList.add('hidden');
+            } else {
+                chatBox.classList.add('hidden');
+                chatBox.classList.remove('flex');
+                chatWidget.classList.remove('hidden');
+            }
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const messages = document.getElementById('chat-messages');
+            
+            if (input.value.trim() !== '') {
+                // User message
+                messages.innerHTML += `
+                    <div class="mb-4 text-right">
+                        <div class="bg-yellow-500 text-white rounded-lg p-3 inline-block">
+                            <p>${input.value}</p>
+                        </div>
+                    </div>
+                `;
+                
+                // Auto reply (simulated)
+                setTimeout(() => {
+                    messages.innerHTML += `
+                        <div class="mb-4">
+                            <div class="bg-gray-200 rounded-lg p-3 inline-block">
+                                <p>Thanks for your message! Our team will respond shortly.</p>
+                            </div>
+                        </div>
+                    `;
+                    messages.scrollTop = messages.scrollHeight;
+                }, 1000);
+                
+                input.value = '';
+                messages.scrollTop = messages.scrollHeight;
+            }
+        }
+
+        // Show chat widget on scroll
+        window.addEventListener('scroll', function() {
+            const chatWidget = document.getElementById('chat-widget');
+            
+            if (window.pageYOffset > 500 && !chatTriggered) {
+                chatTriggered = true;
+                setTimeout(() => {
+                    chatWidget.classList.remove('opacity-0');
+                    chatWidget.classList.add('opacity-100');
+                }, 1000);
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
